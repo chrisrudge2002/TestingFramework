@@ -2,8 +2,6 @@ const envFile = require('node-env-file');
 const path = require('path');
 const webpack = require('webpack');
 
-process.env.NODE_ENV = 'test';
-
 try {
 	envFile(path.join(__dirname, 'config/' + process.env.NODE_ENV + '.env'));
 } catch (e) {}
