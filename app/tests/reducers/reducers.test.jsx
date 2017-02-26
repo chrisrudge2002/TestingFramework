@@ -37,10 +37,11 @@ describe('Reducers', () => {
 				type: 'SET_SEARCH_TEXT',
 				searchText: DOG
 			};
-			const res = reducers.searchTextReducer(df(''), df(action));
+			// const res = reducers.searchTextReducer(df(''), df(action));
+			const res = reducers.searchTextReducer('', df(action));
 
 			expect(res).toEqual(DOG);
-		});	
+		});
 	});
 
 	describe('showCompletedReducer', () => {
@@ -48,7 +49,8 @@ describe('Reducers', () => {
 			const action = {
 				type: 'TOGGLE_SHOW_COMPLETED'
 			};
-			const res = reducers.showCompletedReducer(df(false), df(action));
+			//const res = reducers.showCompletedReducer(df(false), df(action));
+			const res = reducers.showCompletedReducer(false, df(action));
 
 			expect(res).toBe(true);
 		});

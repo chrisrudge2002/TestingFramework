@@ -2,7 +2,7 @@ const webpackTestConfig = require('./webpack.test.config.js');
 
 module.exports = function (config) {
 	config.set({
-		browsers: [ 'Chrome' ],
+		browsers: [ 'Chrome', 'Firefox', 'IE' ],
 		client: { mocha: { timeout: '5000'} },
 		coverageReporter: { type: 'html', dir: 'coverage/' },
 		files: [ 'tests.webpack.js' ],
