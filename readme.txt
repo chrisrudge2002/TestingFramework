@@ -1,0 +1,1 @@
+Simple app to demonstrate JavaScript unit testing using Karam + Mocha.
